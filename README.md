@@ -1,0 +1,1 @@
+# An example of how to transparently recover from Android process death
