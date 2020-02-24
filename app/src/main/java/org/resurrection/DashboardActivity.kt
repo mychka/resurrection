@@ -13,6 +13,6 @@ class DashboardActivity : BaseActivity() {
         setContentView(R.layout.dashboard_activity)
 
         debugText.text =
-            "Process started at $PROCESS_STARTED_AT\nApp started at ${STATE.appStartedAt}\nLast session started at ${STATE.sessionStartedAt}"
+            "Process started at $PROCESS_STARTED_AT\nApp started at ${STATE.appStartedAt}\nLast session started at ${STATE.lastSessionStartedAt}"
     }
 }

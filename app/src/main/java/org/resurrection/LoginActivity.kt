@@ -19,10 +19,10 @@ class LoginActivity : BaseActivity() {
         setContentView(R.layout.login_activity)
 
         debugText.text =
-            "Process started at $PROCESS_STARTED_AT\nApp started at ${STATE.appStartedAt}\nLast session started at ${STATE.sessionStartedAt}"
+            "Process started at $PROCESS_STARTED_AT\nApp started at ${STATE.appStartedAt}\nLast session started at ${STATE.lastSessionStartedAt}"
 
         loginButton.setOnClickListener {
-            STATE.sessionStartedAt = Date().toString()
+            STATE.lastSessionStartedAt = Date().toString()
 
             startActivity(Intent(this, DashboardActivity::class.java))
         }
